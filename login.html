@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+        <style>
+              *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+            font-family: serif;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: -webkit-linear-gradient(to right, #272727, #000000);
+        background: linear-gradient(to right, #202020, #000000);
+        width: 100%;
+        overflow: hidden;
+    }
+    .container{
+        position: relative;
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container span {
+        position: absolute;
+        inset: 0;
+        border: 2px solid #fff;
+        transition: 0.5s;
+    }
+    
+    .container span:nth-child(1) {
+        border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+        animation: animate 6s linear infinite;
+    }
+    
+    .container span:nth-child(2) {
+        border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+        animation: animate 4s linear infinite;
+    }
+    
+    .container span:nth-child(3) {
+        border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+        animation: animate2 10s linear infinite;
+    }
+    
+    .container:hover span {
+        border: 6px solid var(--clr);
+        filter: drop-shadow(0 0 20px var(--clr));
+    }
+    
+    @keyframes animate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360dg);
+        }
+    }
+    
+    @keyframes animate2 {
+        0% {
+            transform: rotate(360deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    
+    .form-container {
+        position: relative;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .form-container h2 {
+        font-size: 2em;
+        color: #fff;
+    }
+    .remember {
+        color: gray;
+    }    
+    .signup-link{
+        color: #272727;
+    }
+    .input-container {
+        position: relative;
+        width: 100%;
+    }
+    
+    .input-container input {
+        position: relative;
+        width: 100%;
+        padding: 12px 20px;
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: 40px;
+        font-size: 1.2em;
+        color: #fff;
+        box-shadow: none;
+        outline: none;
+    }
+    
+    .input-container input[type="submit"] {
+        width: 100%;
+        background: #0078ff;
+        background: -webkit-linear-gradient(to right, #240b36, #c31432);
+        background: linear-gradient(to right, #240b36, #c31432);
+        border: none;
+        cursor: pointer;
+    }
+    
+    .input-container input::placeholder{
+        color: rgba(red, green, blue, alpha);
+    }
+    
+    .links-container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+    }
+    
+    .links-container a {
+        color: #fff;
+        text-decoration: none;
+    }
+    </style>
+    </head><body>
+        <form name="myform" action="login.php" method="POST">
+            <div class="container">
+                <span style="--clr:#eeff00;"></span>
+                <span style="--clr:#00ffdd;"></span>
+                <span style="--clr:#e900d5;"></span>
+                <div class="form-container">
+                    <h2>login</h2>
+                    <div class="input-container">
+                        <input type="text" name="email" placeholder="Email" required="">
+                    </div>
+                    <div class="input-container">
+                        <input type="password" name="password" placeholder="Password" required="">
+                    </div>
+                    <div class="input-container">
+                        <input type="submit" value="login"></div>
+                    
+                    <div class="remember">
+                        <label for=""><input type="checkbox"> Remember me</label>
+                    </div> 
+                    <div class="signup-link">
+                        <p>Don't have an account? <a href="./game/signup.html">sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
