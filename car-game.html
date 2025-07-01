@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Logo Cards Match</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+	    <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+        <link rel="stylesheet" href="car-cards.css">
+        <script src="car-cards.js"></script>
+    </head>
+
+    <body>
+        <h2>Errors: <span id="errors">0</span></h2>
+        <div id="board">
+            <audio id="matchSound" src="match.mp3"></audio>
+            <audio id="notMatchSound" src="nomatch.mp3"></audio>
+        
+        </div>
+        <div><a href="game-menu.html" class="exit-button" onclick="exitGame()">Exit</a></div>
+        <script>
+            function exitGame() {
+              // Implement exit logic here, e.g., close the window or redirect to another page
+              alert('Exiting the game...');
+            }
+          </script>
+    </body>
+</html>

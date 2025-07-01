@@ -1,0 +1,61 @@
+body {
+    background: url("./fruits-bg.jpg");
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#board {
+    height: 532px;
+    width: 475px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    border: 10px solid rgba(14, 14, 14, 0.342);
+}
+.dashboard {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	color: #545454;
+	font-size: 1.2rem;
+}
+
+.dashboard-element {
+	width: 20%;
+	min-width: 100px;
+	text-align: center;
+}
+
+.dashboard-icon {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+#timer {
+	display: inline-block;
+	line-height: 2rem;
+	width: 5%;
+}.card {
+    height: 128px;
+    width: 90px;
+    margin: 2.5px;
+}
+.exit-button {
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #f44336; /* Red color for exit button */
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+
+  .exit-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+  }
+  
+     
+    

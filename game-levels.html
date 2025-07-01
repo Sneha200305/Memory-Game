@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game Menu</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background-image: url(h2.jpg);
+      background-size: cover;
+    }
+
+    #menu-container {
+      text-align: center;
+    }
+
+    .game-container {
+      perspective: 800px;
+      display: inline-block;
+      margin: 20px;
+   
+    }
+
+    .game-category {
+      position: relative;
+      display: block;
+      text-decoration: none;
+      color: #333; /* Text color */
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+    }
+
+    .game-category:hover {
+      transform: rotateX(-10deg) rotateY(10deg) scale(1.1);
+    }
+
+    .game-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .game-background img {
+      width: 260px;
+      height: 350px;
+      border-radius: 10px;
+    }
+
+    .game-content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+      background-color: rgba(197, 197, 197, 0.315);
+      border-radius: 10px;
+      text-align: center;
+      height: 310px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 250px;
+    }
+
+    .game-content h2 {
+      margin-top: 0;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+     <div id="levels">
+
+  <div class="game-container">
+    <a href="levels.html" class="game-levels">
+      <div class="game-background">
+        <img src="levels.jpg" alt="Card Game">
+      </div>
+      <div class="game-content">
+        <h2>3 Levels</h2>
+      </div>
+    </a>
+  </div>
+  
+<div class="game-container">
+  <a href="fv.html" class="game-levels">
+    <div class="game-background">
+      <img src="levels.jpg" alt="f v Game">
+    </div>
+    <div class="game-content">
+      <h2> f v</h2>
+    </div>
+</a>
+</div>
+
+<div class="game-container">
+  <a href="animal.html" class="game-levels">
+    <div class="game-background">
+      <img src="levels.jpg" alt="animal Game">
+    </div>
+    <div class="game-content">
+      <h2> animal</h2>
+    </div>
+</a>
+</div>
+
+<div class="game-container">
+  <a href="difficulty.html" class="game-levels">
+    <div class="game-background">
+      <img src="levels.jpg" alt="difficult Game">
+    </div>
+    <div class="game-content">
+      <h2> Difficulty</h2>
+    </div>
+</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    background: url("car-back.jpg");
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#board {
+    height: 532px;
+    width: 475px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    border: 10px solid rgba(14, 14, 14, 0.342);
+}
+h1 {
+	font-family: 'Chicle', cursive;
+	font-size: 4.5em;
+	text-align: center;
+	color: #61045f;
+}
+.card {
+    height: 128px;
+    width: 90px;
+    margin: 2.5px;
+}
+.exit-button {
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #f44336; /* Red color for exit button */
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+
+  .exit-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+  }
